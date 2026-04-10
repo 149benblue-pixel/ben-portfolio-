@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  
+  --color-brand-yellow: #FACC15;
+  --color-brand-black: #0A0A0A;
+  --color-brand-white: #FAFAFA;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-white font-sans selection:bg-brand-yellow selection:text-brand-black;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
